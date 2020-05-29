@@ -26,20 +26,20 @@ public class InteractTest : MonoBehaviour
         {
             Debug.Log("Close enough");
             textRange = true;
-            Dialogue();
+            CubeDialogue();
         }
 
         if (distanceToObject >= 3)
         {
             Debug.Log("Too far");
             textRange = false;
-            DialogueReset();
+            CubeReset();
         }
 
     }
 
     //A function that will activate when the player left clicks on the object
-    public void Dialogue()
+    public void CubeDialogue()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -47,7 +47,7 @@ public class InteractTest : MonoBehaviour
         }
     }
 
-    public void DialogueReset()
+    public void CubeReset()
     {
 
         test.text = "";
